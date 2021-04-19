@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		36A4BE2CAFEE244F82FD304A /* Pods_IftarVaktiV2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5E9782D5D8F74FA4A491A27 /* Pods_IftarVaktiV2.framework */; };
+		BC563651262C852F0001834D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC563650262C852F0001834D /* AppDelegate.swift */; };
+		BC563653262C852F0001834D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC563652262C852F0001834D /* ContentView.swift */; };
+		BC563655262C85310001834D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC563654262C85310001834D /* Assets.xcassets */; };
+		BC563658262C85310001834D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC563657262C85310001834D /* Preview Assets.xcassets */; };
+		BC56365B262C85310001834D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC563659262C85310001834D /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1CA451B15764F15AFD2CEE93 /* Pods-IftarVaktiV2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IftarVaktiV2.release.xcconfig"; path = "Target Support Files/Pods-IftarVaktiV2/Pods-IftarVaktiV2.release.xcconfig"; sourceTree = "<group>"; };
+		42EB249159C1EAA69BDD8272 /* Pods-IftarVaktiV2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IftarVaktiV2.debug.xcconfig"; path = "Target Support Files/Pods-IftarVaktiV2/Pods-IftarVaktiV2.debug.xcconfig"; sourceTree = "<group>"; };
+		A5E9782D5D8F74FA4A491A27 /* Pods_IftarVaktiV2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IftarVaktiV2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC56364D262C852F0001834D /* IftarVaktiV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IftarVaktiV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC563650262C852F0001834D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BC563652262C852F0001834D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BC563654262C85310001834D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BC563657262C85310001834D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BC56365A262C85310001834D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BC56365C262C85310001834D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC56365D262C85310001834D /* IftarVaktiV2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = IftarVaktiV2.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BC56364A262C852F0001834D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36A4BE2CAFEE244F82FD304A /* Pods_IftarVaktiV2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F82C140691A776D7507B6A5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A5E9782D5D8F74FA4A491A27 /* Pods_IftarVaktiV2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8FCFAD3EE961B0B078F71462 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				42EB249159C1EAA69BDD8272 /* Pods-IftarVaktiV2.debug.xcconfig */,
+				1CA451B15764F15AFD2CEE93 /* Pods-IftarVaktiV2.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BC563644262C852F0001834D = {
+			isa = PBXGroup;
+			children = (
+				BC56364F262C852F0001834D /* IftarVaktiV2 */,
+				BC56364E262C852F0001834D /* Products */,
+				8FCFAD3EE961B0B078F71462 /* Pods */,
+				1F82C140691A776D7507B6A5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BC56364E262C852F0001834D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC56364D262C852F0001834D /* IftarVaktiV2.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC56364F262C852F0001834D /* IftarVaktiV2 */ = {
+			isa = PBXGroup;
+			children = (
+				BC563650262C852F0001834D /* AppDelegate.swift */,
+				BC563652262C852F0001834D /* ContentView.swift */,
+				BC563654262C85310001834D /* Assets.xcassets */,
+				BC563659262C85310001834D /* Main.storyboard */,
+				BC56365C262C85310001834D /* Info.plist */,
+				BC56365D262C85310001834D /* IftarVaktiV2.entitlements */,
+				BC563656262C85310001834D /* Preview Content */,
+			);
+			path = IftarVaktiV2;
+			sourceTree = "<group>";
+		};
+		BC563656262C85310001834D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BC563657262C85310001834D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BC56364C262C852F0001834D /* IftarVaktiV2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC563660262C85310001834D /* Build configuration list for PBXNativeTarget "IftarVaktiV2" */;
+			buildPhases = (
+				F4EC618D6D723E80336FAB21 /* [CP] Check Pods Manifest.lock */,
+				BC563649262C852F0001834D /* Sources */,
+				BC56364A262C852F0001834D /* Frameworks */,
+				BC56364B262C852F0001834D /* Resources */,
+				78EECE67E0D2A3E8EB7A5661 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IftarVaktiV2;
+			productName = IftarVaktiV2;
+			productReference = BC56364D262C852F0001834D /* IftarVaktiV2.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BC563645262C852F0001834D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					BC56364C262C852F0001834D = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = BC563648262C852F0001834D /* Build configuration list for PBXProject "IftarVaktiV2" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BC563644262C852F0001834D;
+			productRefGroup = BC56364E262C852F0001834D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BC56364C262C852F0001834D /* IftarVaktiV2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BC56364B262C852F0001834D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC56365B262C85310001834D /* Main.storyboard in Resources */,
+				BC563658262C85310001834D /* Preview Assets.xcassets in Resources */,
+				BC563655262C85310001834D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		78EECE67E0D2A3E8EB7A5661 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IftarVaktiV2/Pods-IftarVaktiV2-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IftarVaktiV2/Pods-IftarVaktiV2-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IftarVaktiV2/Pods-IftarVaktiV2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4EC618D6D723E80336FAB21 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IftarVaktiV2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BC563649262C852F0001834D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC563653262C852F0001834D /* ContentView.swift in Sources */,
+				BC563651262C852F0001834D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BC563659262C85310001834D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC56365A262C85310001834D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BC56365E262C85310001834D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BC56365F262C85310001834D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		BC563661262C85310001834D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42EB249159C1EAA69BDD8272 /* Pods-IftarVaktiV2.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = IftarVaktiV2/IftarVaktiV2.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"IftarVaktiV2/Preview Content\"";
+				DEVELOPMENT_TEAM = H39DR74T85;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = IftarVaktiV2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yusufusta.IftarVaktiV2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		BC563662262C85310001834D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CA451B15764F15AFD2CEE93 /* Pods-IftarVaktiV2.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = IftarVaktiV2/IftarVaktiV2.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"IftarVaktiV2/Preview Content\"";
+				DEVELOPMENT_TEAM = H39DR74T85;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = IftarVaktiV2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yusufusta.IftarVaktiV2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BC563648262C852F0001834D /* Build configuration list for PBXProject "IftarVaktiV2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC56365E262C85310001834D /* Debug */,
+				BC56365F262C85310001834D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC563660262C85310001834D /* Build configuration list for PBXNativeTarget "IftarVaktiV2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC563661262C85310001834D /* Debug */,
+				BC563662262C85310001834D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BC563645262C852F0001834D /* Project object */;
+}
