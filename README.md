@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/14722250/93017676-1a009c00-f5fd-11ea-9b8e-c69c2cd4fa89.png" height=64 />
+  <img src="https://raw.githubusercontent.com/yusufusta/iftarvakti/main/iftarvakti/Assets.xcassets/AppIcon.appiconset/icon_512%401x.png" height=64 />
 </p>
 
 # 🕌 İftar Vakti V3
@@ -7,9 +7,14 @@ macOS için menüde iftar ve sahur vaktini geri sayan uygulama.
 
 > ⭐️ Projeyi beğendiyseniz star atmayı unutmayın!
 
-## Görsel
+## Uygulama Videosu
+<details>
+  <summary>Göster</summary>
 
-![Ekran Kaydı 2021-04-19 04 52 03](https://user-images.githubusercontent.com/46392667/115219491-425ef480-a110-11eb-88d5-f0c137c5ca15.gif)
+![Screen Recording 2023-03-26 at 16 02 29](https://user-images.githubusercontent.com/46392667/227778690-8745ea11-991a-4d75-b722-d1e89b084daf.gif)
+
+</details>
+
 
 ## 📦 Kurulum
 
