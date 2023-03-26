@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC056F2129CEF8870028156D /* JsonModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC056F2029CEF8870028156D /* JsonModels.swift */; };
+		BC13A9A629CDECDF00CBFDB1 /* MenuAppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC13A9A529CDECDF00CBFDB1 /* MenuAppViewModel.swift */; };
+		BC79784F29CDE6DA00DA547E /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC79784E29CDE6DA00DA547E /* Api.swift */; };
 		BCEC9EAE29CDBCF700805F79 /* iftarvaktiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEC9EAD29CDBCF700805F79 /* iftarvaktiApp.swift */; };
 		BCEC9EB029CDBCF700805F79 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEC9EAF29CDBCF700805F79 /* ContentView.swift */; };
 		BCEC9EB229CDBCF900805F79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCEC9EB129CDBCF900805F79 /* Assets.xcassets */; };
@@ -14,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BC056F2029CEF8870028156D /* JsonModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonModels.swift; sourceTree = "<group>"; };
+		BC13A9A529CDECDF00CBFDB1 /* MenuAppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuAppViewModel.swift; sourceTree = "<group>"; };
+		BC79784E29CDE6DA00DA547E /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 		BCEC9EAA29CDBCF700805F79 /* iftarvakti.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iftarvakti.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCEC9EAD29CDBCF700805F79 /* iftarvaktiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iftarvaktiApp.swift; sourceTree = "<group>"; };
 		BCEC9EAF29CDBCF700805F79 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +59,9 @@
 			isa = PBXGroup;
 			children = (
 				BCEC9EAD29CDBCF700805F79 /* iftarvaktiApp.swift */,
+				BC13A9A529CDECDF00CBFDB1 /* MenuAppViewModel.swift */,
+				BC79784E29CDE6DA00DA547E /* Api.swift */,
+				BC056F2029CEF8870028156D /* JsonModels.swift */,
 				BCEC9EAF29CDBCF700805F79 /* ContentView.swift */,
 				BCEC9EB129CDBCF900805F79 /* Assets.xcassets */,
 				BCEC9EB629CDBCF900805F79 /* iftarvakti.entitlements */,
@@ -139,7 +148,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC79784F29CDE6DA00DA547E /* Api.swift in Sources */,
+				BC056F2129CEF8870028156D /* JsonModels.swift in Sources */,
 				BCEC9EB029CDBCF700805F79 /* ContentView.swift in Sources */,
+				BC13A9A629CDECDF00CBFDB1 /* MenuAppViewModel.swift in Sources */,
 				BCEC9EAE29CDBCF700805F79 /* iftarvaktiApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,18 +280,22 @@
 				CODE_SIGN_ENTITLEMENTS = iftarvakti/iftarvakti.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"iftarvakti/Preview Content\"";
 				DEVELOPMENT_TEAM = D9W8FTBJLT;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "İftar Vakti";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yusufusta.iftarvakti;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -295,18 +311,22 @@
 				CODE_SIGN_ENTITLEMENTS = iftarvakti/iftarvakti.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"iftarvakti/Preview Content\"";
 				DEVELOPMENT_TEAM = D9W8FTBJLT;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "İftar Vakti";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yusufusta.iftarvakti;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

@@ -1,17 +1,28 @@
-//
-//  iftarvaktiApp.swift
-//  iftarvakti
-//
-//  Created by Yusuf Usta on 24.03.2023.
-//
-
 import SwiftUI
+import UserNotifications
 
 @main
-struct iftarvaktiApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
+struct iftarVaktiApp: App {
+    @StateObject private var menuVM = MenuAppViewModel()
+    @AppStorage("sendNotifications") var sendNotifications: Bool = false
+    @AppStorage("selectedIlce") var selectedIlce: String = "9550"
+
+    var api = Api()
+    
+    init() {
     }
+    
+    var body: some Scene {
+        MenuBarExtra(menuVM.label) {
+                ContentView()
+                    .environmentObject(menuVM)
+                    .onAppear {
+                        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { success, error in
+                            sendNotifications = success;
+                        }
+                    }
+        }
+            .menuBarExtraStyle(.window)
+    }
+    
 }
