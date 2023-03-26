@@ -34,6 +34,7 @@ struct ContentView: View {
         ["boslukluUzun", "Saat sa Dakika dk Saniye sn"],
         ["boslukluKisa", "Saat Dakika"],
         ["sehirIlceKisa", "Şehir İlçe | Saat:Dakika"],
+        ["ilceTurUzun", "İlçe | Sahur | Saat:Dakika:Saniye"],
         ["kisaTur", "i | Sahur"],
         ["kisa", "i"],
     ]

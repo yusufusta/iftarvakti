@@ -14,6 +14,7 @@ class MenuAppViewModel : ObservableObject {
     @Published var kalanSureApp = "Yükleniyor..."
     @Published var vakitTur = 0
 
+    var lastNotificationSendTime : Double = 0;
     var aksamVakit : Double = 0;
     var api = Api()
     var vakitler : Vakitler? = nil
@@ -55,10 +56,10 @@ class MenuAppViewModel : ObservableObject {
                     kalanSure2 = Int((geriKalanZaman2! - Date().timeIntervalSince1970))
                 }
                 
-                if (kalanSure2 > kalanSure) {
+                if (kalanSure2 > kalanSure && (kalanSure < 1 && kalanSure > -60)) {
                     self.vakitTur = 0;
                     
-                    if (kalanSure < 1 && kalanSure > -90) {
+                    if (kalanSure < 1 && kalanSure > -60) {
                         self.label = "İFTAR VAKTİ!"
                         
                         let title = selectedIlceStr! + " İÇİN İFTAR VAKTİ";
@@ -71,7 +72,7 @@ class MenuAppViewModel : ObservableObject {
                     self.vakitTur = 1;
                     kalanSure = kalanSure2
                     
-                    if (kalanSure < 1 && kalanSure > -90) {
+                    if (kalanSure < 1 && kalanSure > -60) {
                         self.label = "SAHUR VAKTİ!"
                         
                         let title = selectedIlceStr! + " İÇİN SAHUR VAKTİ";
@@ -112,7 +113,9 @@ class MenuAppViewModel : ObservableObject {
                     case "sehirIlceKisa":
                         self.label = selectedIlStr! + " " + selectedIlceStr! + " " + (saatCiftNokta + dkPure)
                     case "kisaTur":
-                    self.label = "i | " + vakitYazi
+                        self.label = "i | " + vakitYazi
+                    case "ilceTurUzun":
+                        self.label = selectedIlceStr! + " | " + vakitYazi + " | " + saatCiftNokta + (now_data[1] != "" ? now_data[1] + ":" : "") + (now_data[2] != "" ? now_data[2] : "")
                     case "kisa":
                         self.label = "i"
                     default:
@@ -144,6 +147,14 @@ class MenuAppViewModel : ObservableObject {
     }
     
     func sendNotification(title: String, subtitle: String) -> Void {
+        let geriKalan = Int((self.lastNotificationSendTime - Date().timeIntervalSince1970))
+        print(self.lastNotificationSendTime, geriKalan)
+        if geriKalan > 0 && geriKalan < 90 {
+            return
+        } else {
+            self.lastNotificationSendTime = Date().timeIntervalSince1970
+        }
+        
         let sendNotifications = UserDefaults.standard.bool(forKey: "sendNotifications")
         
         if (!sendNotifications) { return; }
