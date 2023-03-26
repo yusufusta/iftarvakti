@@ -30,7 +30,7 @@ Uygulama, **macOS 13.0 ve üstünde** çalışmaktadır. **Intel** ve **Apple Si
 ## ✏ Koda Destek
 Proje Xcode 14 ve Swift 5 için yazıldı.
 
-Gereksinimleri sağladıktan sonra Git reposunu klonlayın ardından , ardından `iftarvakti.xcodeproj` dosyasına çift tıklayın. XCode de proje açılacaktır.
+Gereksinimleri sağladıktan sonra Git reposunu klonlayın, ardından `iftarvakti.xcodeproj` dosyasına çift tıklayın. XCode'de proje açılacaktır.
 
 Hataları giderdikten sonra PR açmayı unutmayın :)
 
@@ -38,7 +38,7 @@ Hataları giderdikten sonra PR açmayı unutmayın :)
 [yusufusta.dev](https://yusufusta.dev)
 
 > Swift ile yaptığım ilk projem. Öğrenmek güzel bir şey. Aklıma böyle bir uygulama geldi yapayım dedim. Ayrıca oruç tutarken de iyi oluyor :)
-
+> "https://ezanvakti.herokuapp.com" API'si kullanılarak yapılmıştır. @furkantektas'a teşekkürler.
 ## Lisans
 
 MIT
