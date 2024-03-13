@@ -46,20 +46,31 @@ class Api {
     }
     
     func getVakitlerAsync(ilceId : String) async -> Vakitler? {
+        print("ilce",ilceId)
         let url = URL(string: "https://ezanvakti.herokuapp.com/vakitler/\(ilceId)")!
-        let urlSession = URLSession.shared
+        
+        let cache = URLCache(memoryCapacity: 20 * 1024 * 1024, diskCapacity: 100 * 1024 * 1024, diskPath: "vakitlerCache")
+        let configuration = URLSessionConfiguration.default
+        configuration.urlCache = cache
+        configuration.requestCachePolicy = .returnCacheDataElseLoad
+        
+        let urlSession = URLSession(configuration: configuration)
         var users : Vakitler
         
         do {
-            let (data, _) = try await urlSession.data(from: url)
-            users = try! JSONDecoder().decode(Vakitler.self, from: data)
+            let (data, response) = try await urlSession.data(from: url)
+            
+            // Önbellekten yüklenip yüklenmediğini kontrol et
+            if let httpResponse = response as? HTTPURLResponse, let cachedResponse = urlSession.configuration.urlCache?.cachedResponse(for: URLRequest(url: url)) {
+            }
+            
+            users = try JSONDecoder().decode(Vakitler.self, from: data)
         }
         catch {
-            print("Error loading \(url): \(String(describing: error))")
+            print("Error loading \(url): \(error)")
             return nil
         }
 
         return users
     }
-
 }

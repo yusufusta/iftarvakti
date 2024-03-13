@@ -21,7 +21,12 @@ class MenuAppViewModel : ObservableObject {
     
     var time : Int = 100;
 
+    init() {
+        self.run()
+    }
+    
     func run() -> Void {
+        print("run started")
         api.getIller() {
             (ils) in
             self.iller = ils
@@ -44,19 +49,18 @@ class MenuAppViewModel : ObservableObject {
                 let geriKalanZaman = self.getTodayAksamVakit(vakitler: self.vakitler!);
                 var geriKalanZaman2 = self.getTodayImsakVakit(vakitler: self.vakitler!);
                 
+                if (geriKalanZaman == -1 || geriKalanZaman2 == -1) {
+                    exit(1)
+                }
+                
                 let topBarStyle = UserDefaults.standard.string(forKey: "topBarStyle") ?? "saatKisa"
                 let selectedIlStr = UserDefaults.standard.string(forKey: "selectedIlStr")
                 let selectedIlceStr = UserDefaults.standard.string(forKey: "selectedIlceStr")
                 
                 var kalanSure = Int((geriKalanZaman! - Date().timeIntervalSince1970))
                 var kalanSure2 = Int((geriKalanZaman2! - Date().timeIntervalSince1970))
-                
-                if kalanSure2 < -10 {
-                    geriKalanZaman2 = self.getTodayImsakVakit(vakitler: self.vakitler!, another_day:true);
-                    kalanSure2 = Int((geriKalanZaman2! - Date().timeIntervalSince1970))
-                }
-                
-                if (kalanSure2 > kalanSure && (kalanSure < 1 && kalanSure > -60)) {
+                                    
+                if (kalanSure > 0 && (kalanSure < kalanSure2 || kalanSure2 < 0)) {
                     self.vakitTur = 0;
                     
                     if (kalanSure < 1 && kalanSure > -60) {
@@ -70,6 +74,11 @@ class MenuAppViewModel : ObservableObject {
                     }
                 } else {
                     self.vakitTur = 1;
+                    if kalanSure2 < 0 {
+                        geriKalanZaman2 = self.getTodayImsakVakit(vakitler: self.vakitler!, another_day:true);
+                        kalanSure2 = Int((geriKalanZaman2! - Date().timeIntervalSince1970))
+                    }
+
                     kalanSure = kalanSure2
                     
                     if (kalanSure < 1 && kalanSure > -60) {
