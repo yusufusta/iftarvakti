@@ -17,6 +17,7 @@ class PrayerTimeManager: ObservableObject {
     @Published var gregorianDateString = ""
 
     private var timer: Timer?
+    private var dayCheckTimer: Timer?
     private let calendar = Calendar(identifier: .gregorian)
     private let dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
@@ -33,6 +34,7 @@ class PrayerTimeManager: ObservableObject {
             setupNotifications()
         }
         updateDateStrings()
+        startDayCheckTimer()
     }
 
     private func updateDateStrings() {
@@ -88,6 +90,29 @@ class PrayerTimeManager: ObservableObject {
 
         if isRamadan {
             currentRamadanDay = islamicCalendar.component(.day, from: now)
+        }
+    }
+
+    private func startDayCheckTimer() {
+        dayCheckTimer?.invalidate()
+        dayCheckTimer = Timer.scheduledTimer(withTimeInterval: 60, repeats: true) { [weak self] _ in
+            self?.checkForDayChange()
+        }
+    }
+
+    private func checkForDayChange() {
+        let now = Date()
+        let islamicCalendar = Calendar(identifier: .islamicUmmAlQura)
+        let currentDay = islamicCalendar.component(.day, from: now)
+        let currentMonth = islamicCalendar.component(.month, from: now)
+
+        // Gün değişimini kontrol et
+        if currentDay != currentRamadanDay || (currentMonth == 9) != isRamadan {
+            checkIfRamadan()
+            if isRamadan {
+                fetchPrayerTimes()
+            }
+            updateDateStrings()
         }
     }
 
